@@ -1,0 +1,68 @@
+/* Fontes para esilizar o HTML */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Configurações gerais */
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #FFFFFF;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Estilizar a calculadora */
+
+#resultado {
+  width: 90%;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  text-align: right;
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+/* Estilo dos botões */
+input[type="button"] {
+  width: 20%;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: #eee;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Estilo dos botões quando hover */
+input[type="button"]:hover {
+  background-color: #ddd;
+}
+
+/* Estilo do botão de igual */
+input[value="="] {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+/* Estilo do botão de limpar */
+input[value="C"] {
+  background-color: #f44336;
+  color: #fff;
+}
+
+/* Direitos autorais e footer */
+
+footer {
+  color: #2196f3;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}

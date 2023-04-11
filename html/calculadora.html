@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CálculoAdvanced</title>
+    <link rel="stylesheet" href="../css/calculadora.css">
+    <script src="../javascript/calculadora.js"></script>
+    <link rel="icon" type="imagem/png" href="../images/icone.png" />
+  </head>
+  <body>
+    <form>
+      <input type="text" id="resultado" class="resultado">
+      <br>
+      <input type="button" value="1" onclick="adicionar('1')" class="botao">
+      <input type="button" value="2" onclick="adicionar('2')" class="botao">
+      <input type="button" value="3" onclick="adicionar('3')" class="botao">
+      <input type="button" value="+" onclick="adicionar('+')" class="operador">
+      <br>
+      <input type="button" value="4" onclick="adicionar('4')" class="botao">
+      <input type="button" value="5" onclick="adicionar('5')" class="botao">
+      <input type="button" value="6" onclick="adicionar('6')" class="botao">
+      <input type="button" value="-" onclick="adicionar('-')" class="operador">
+      <br>
+      <input type="button" value="7" onclick="adicionar('7')" class="botao">
+      <input type="button" value="8" onclick="adicionar('8')" class="botao">
+      <input type="button" value="9" onclick="adicionar('9')" class="botao">
+      <input type="button" value="*" onclick="adicionar('*')" class="operador">
+      <br>
+      <input type="button" value="0" onclick="adicionar('0')" class="botao">
+      <input type="button" value="." onclick="adicionar('.')" class="botao">
+      <input type="button" value="/" onclick="adicionar('/')" class="operador">
+      <input type="button" value="=" onclick="calcular()" class="igual">
+      <br>
+      <input type="button" value="C" onclick="limpar()" class="limpar">
+    </form>
+    <script>
+      function adicionar(valor) {
+        document.getElementById("resultado").value += valor;
+      }
+
+      function calcular() {
+        document.getElementById("resultado").value = eval(document.getElementById("resultado").value);
+      }
+
+      function limpar() {
+        document.getElementById("resultado").value = "";
+      }
+    </script>
+
+    <footer>feito por dkrlma, no objetivo de praticar o conhecimento</footer>
+  </body>
+</html>
